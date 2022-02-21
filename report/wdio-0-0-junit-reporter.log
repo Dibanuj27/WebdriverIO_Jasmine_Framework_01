@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Browser open" timestamp="2022-02-21T12:19:08" time="3.359" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Browser open"/>
+      <property name="capabilities" value="emulator-5554.android.11"/>
+      <property name="file" value=".\test\specs\android_web_spec.js"/>
+    </properties>
+    <testcase classname="emulator-5554.android.11.Browser_open" name="Open" time="1.865">
+      <system-out><![CDATA[
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/url - {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+RESULT: {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element - {"using":"xpath","value":"//input[@name=\"first_name\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"first_name\"]"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element/dc081f9d-a0eb-4832-824f-524871ce9977/value - {"text":"Itachi"}
+RESULT: {"text":"Itachi"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element - {"using":"xpath","value":"//input[@name=\"last_name\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"last_name\"]"}
+COMMAND: GET /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element/ea3c9d5b-4e0a-45fd-bef5-8c97a1a40293/displayed - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="emulator-5554.android.11.Browser_open" name="Last name" time="0.519">
+      <system-out><![CDATA[
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/url - {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+RESULT: {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element - {"using":"xpath","value":"//input[@name=\"last_name\"]"}
+RESULT: {"using":"xpath","value":"//input[@name=\"last_name\"]"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element/f427815a-3f40-487e-8396-f7f7a4ca2b42/value - {"text":"Uchiha"}
+RESULT: {"text":"Uchiha"}
+]]></system-out>
+    </testcase>
+    <testcase classname="emulator-5554.android.11.Browser_open" name="New" time="0.973">
+      <system-out><![CDATA[
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/url - {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+RESULT: {"url":"https://demo.seleniumeasy.com/input-form-demo.html"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/url - {"url":"https://demo.seleniumeasy.com/basic-radiobutton-demo.html"}
+RESULT: {"url":"https://demo.seleniumeasy.com/basic-radiobutton-demo.html"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element - {"using":"xpath","value":"//input[@value=\"Male\"]"}
+RESULT: {"using":"xpath","value":"//input[@value=\"Male\"]"}
+COMMAND: POST /session/1b00503b-6835-47cd-b9fa-ba75b234194e/element/d6fca662-aea8-426b-9a09-3b630012fce1/click - {}
+RESULT: {}
+COMMAND: DELETE /session/1b00503b-6835-47cd-b9fa-ba75b234194e - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
